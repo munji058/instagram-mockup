@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Mockup</title>
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/side.css" />
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header__left">
+      <img src="./assets/icons/logo.svg" alt="Instagram logo" class="header__logo" />
+
+<!-- 다크모드버튼 추가 -->
+  <button id="themeToggle" class="theme-btn">
+    <img src="./assets/icons/moon.svg" alt="Dark mode" class="icon" />
+  </button>
+      
+    </div>
+
+    <div class="header__center">
+       <div class="header__search-box">
+    <img src="./assets/icons/search.svg" alt="search" class="search-icon" />
+      <input type="text" class="header__search" placeholder="Search" />
+    </div>
+    </div>
+
+    <div class="header__right">
+      <img src="./assets/icons/home.svg" alt="Home" class="icon" />
+      <img src="./assets/icons/shop.svg" alt="shop" class="icon" />
+      <img src="./assets/icons/messenger.svg" alt="Messages" class="icon" />
+      <img src="./assets/images/avatar.png" alt="Profile" class="icon profile-icon" />
+    </div>
+  </header>
+
+  <!-- 메인 컨테이너 -->
+  <main class="container">
+    <!-- 메인 피드 -->
+    <section class="feed">
+      <!-- 스토리 -->
+      <div class="stories">
+        <div class="story">
+          <img src="./assets/images/avatar.png" alt="user1" class="story__img" />
+          <p class="story__name">user1</p>
+        </div>
+      </div>
+
+      <!-- 게시물 -->
+      <article class="post">
+        <div class="post__header">
+          <div class="post__user">
+            <img src="./assets/images/avatar.png" alt="user1" class="post__profile" />
+            <span class="post__username">user1</span>
+          </div>
+          <img src="./assets/icons/more.svg" alt="More options" class="post__more" />
+        </div>
+
+        <div class="post__image">
+          <img src="./assets/images/picture.jpeg" alt="Post image" />
+        </div>
+
+        <div class="post__actions">
+          <div class="post__left">
+            <img src="./assets/icons/heart.svg" alt="Like" class="icon" />
+            <img src="./assets/icons/comment.svg" alt="Comment" class="icon" />
+          </div>
+          <img src="./assets/icons/bookmark.svg" alt="Save" class="icon" />
+        </div>
+
+        <div class="post__info">
+          <img src="./assets/images/avatar.png" alt="Liked by user2" class="post__likes-avatar" />
+          <p class="post__likes">Liked by <b>user2</b> and 33 others</p>
+          <p class="post__desc"><b>user1</b> 3팀 근두운 타고 날아보자🛫</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 오른쪽 사이드바 -->
+    <aside class="sidebar">
+      <div class="sidebar__profile">
+        <img src="./assets/images/avatar.png" alt="user1" class="sidebar__profile-img" />
+        <div class="sidebar__text">
+          <p class="username">user1</p>
+          <p class="nickname">nickname</p>
+        </div>
+        <a href="#" class="switch-link">Switch</a>
+      </div>
+
+      <div class="sidebar__suggestions">
+        <div class="sidebar__header">
+          <p>Suggestions for you</p>
+          <a href="#" class="see-all">See All</a>
+        </div>
+
+        <div class="suggestion">
+          <img src="./assets/images/avatar.png" alt="user2" class="suggestion__img" />
+          <div>
+            <p class="username">user2</p>
+            <p class="desc">Followed by user3, user4</p>
+          </div>
+          <a href="#" class="follow-link">Follow</a>
+        </div>
+
+        <div class="suggestion">
+          <img src="./assets/images/avatar.png" alt="user3" class="suggestion__img" />
+          <div>
+            <p class="username">user3</p>
+            <p class="desc">Followed by user4, user5</p>
+          </div>
+          <a href="#" class="follow-link">Follow</a>
+        </div>
+        <div class="suggestion">
+          <img src="./assets/images/avatar.png" alt="user4" class="suggestion__img" />
+          <div>
+            <p class="username">user4</p>
+            <p class="desc">Followed by user3, user5</p>
+          </div>
+          <a href="#" class="follow-link">Follow</a>
+        </div>
+        <div class="suggestion">
+          <img src="./assets/images/avatar.png" alt="user5" class="suggestion__img" />
+          <div>
+            <p class="username">user5</p>
+            <p class="desc">Followed by user3, uesr4</p>
+          </div>
+          <a href="#" class="follow-link">Follow</a>
+        </div>
+      </div>
+
+      <footer class="sidebar__footer">
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+        <p class="copyright">© 2025 Instagram from Facebook</p>
+      </footer>
+    </aside>
+  </main>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
+
