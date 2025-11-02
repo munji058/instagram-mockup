@@ -22,7 +22,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    
     border: none;
     cursor: pointer;
     gap: 6px;
@@ -30,6 +30,7 @@
 
 .story{
     width: 100%;
+    background-color: var(--primary);
     padding: 16px 0;
     position: relative;
     display: flex;
@@ -64,7 +65,7 @@
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
-;
+    
 }
 
 .story__name{
@@ -93,6 +94,7 @@
 }
 
 .post__header{
+    background-color: var(--primary);
     border-bottom: 1px solid var(--border);
 
     display: flex;
@@ -214,14 +216,7 @@
     position: relative;
 }
 
-.post__likes span{
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--text-dark);
-    text-decoration: none;
-}
-
-.post__desc span{
+.post__info p{
     font-size: 14px;
     font-weight: 400;
     color: var(--text-dark);
@@ -269,7 +264,7 @@
         padding: 4px 8px 12px;
     }
 
-
+    
 }
 
 @media (min-width: 1024px){
