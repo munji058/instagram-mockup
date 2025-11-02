@@ -1,0 +1,92 @@
+/* 전체 헤더 */
+.header {
+  width: 100%;
+  height: 44px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid var(--border);
+}
+
+/* 중앙 컨텐츠 */
+.header__container {
+  width: 100%;
+  max-width: 975px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+/* 로고 */
+.header__logo {
+  margin-top: 5px;
+}
+
+/* 검색 박스 */
+.header__search-box {
+  width: 216px;
+  height: 28px;
+  align-items: center;
+  display: none;
+  position: relative;
+}
+
+.header__search-box img {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.header__search-box input {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 4px 10px 4px 28px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--text-light);
+  text-overflow: hidden;
+  white-space: nowrap;
+}
+
+.header__search-box input:focus {
+  color: var(--text-dark);
+}
+
+/* 우측 아이콘 */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__right .icon {
+  width: 24px !important;
+  height: 24px !important;
+  cursor: pointer;
+}
+
+.header__right .profile-icon {
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@media (min-width : 768px) {
+  .header__search-box {
+    display: flex;
+  }
+}
