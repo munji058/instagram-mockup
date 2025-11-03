@@ -27,6 +27,24 @@
   align-items: center;
 }
 
+/* 다크모드 */
+.theme-btn {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+
+.theme-btn .icon {
+  width: 100%;
+  height: 100%;
+}
+
 /* 로고 */
 .header__logo {
   margin-top: 5px;
